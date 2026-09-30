@@ -1,0 +1,140 @@
+/* =========================
+   DESIGN SYSTEM
+   ========================= */
+
+:root {
+    /* Cores */
+    --cor-primaria: #2E7D32;
+    --cor-primaria-escura: #1B5E20;
+    --cor-secundaria: #F9A825;
+    --cor-secundaria-clara: #FFF3CD;
+
+    --cor-neutra-escura: #212121;
+    --cor-neutra-media: #757575;
+    --cor-neutra-clara: #F5F5F5;
+    --cor-branca: #FFFFFF;
+
+    /* Tipografia */
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.75rem;
+    --font-size-xxl: 2.25rem;
+
+    /* Espaçamentos */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+    --space-6: 4rem;
+}
+/* =========================
+   COMPONENTES DE FEEDBACK
+   ========================= */
+
+/* BADGES */
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+}
+
+.badge-sucesso {
+    background-color: #E8F5E9;
+    color: #1B5E20;
+}
+
+.badge-info {
+    background-color: #E3F2FD;
+    color: #1565C0;
+}
+
+.badge-alerta {
+    background-color: #FFF3CD;
+    color: #856404;
+}
+
+
+/* ALERTAS */
+
+.alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 5px solid;
+}
+
+.alert-sucesso {
+    background-color: #E8F5E9;
+    border-color: #2E7D32;
+    color: #1B5E20;
+}
+
+.alert-alerta {
+    background-color: #FFF3CD;
+    border-color: #F9A825;
+    color: #856404;
+}
+
+.alert-erro {
+    background-color: #FFEBEE;
+    border-color: #C62828;
+    color: #B71C1C;
+}
+
+
+/* TOAST */
+
+.toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 1rem 1.5rem;
+    background-color: #212121;
+    color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    background-color: #1B5E20;
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>ONG Esperança</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ong Esperança</h1>
+
+        <nav>
+            <a href="#inicio" data-page="inicio">Início</a>
+            <a href="#projetos" data-page="projetos">Projetos</a>
+            <a href="#cadastro" data-page="cadastro">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Área principal da SPA -->
+        <div id="app"></div>
+
+        <!-- Componentes de feedback -->
+        <section>
+
+            <h2>Componentes de Feedback</h2>
+
+            <h3>Badges</h3>
+
+            <span class="badge badge-sucesso">Projeto ativo</span>
+            <span class="badge badge-info">Informação</span>
+            <span class="badge badge-alerta">Em andamento</span>
+
+            <h3>Alertas</h3>
+
+            <div class="alert alert-sucesso">
+                Cadastro realizado com sucesso!
+            </div>
+
+            <div class="alert alert-alerta">
+                Atenção: existem informações pendentes.
+            </div>
+
+            <div class="alert alert-erro">
+                Não foi possível concluir a operação.
+            </div>
+
+            <h3>Toast</h3>
+
+            <div class="toast">
+                Sua inscrição foi realizada com sucesso!
+            </div>
+
+            <h3>Modal</h3>
+
+            <div class="modal">
+
+                <div class="modal-content">
+
+                    <h2>Obrigado por apoiar a ONG Esperança</h2>
+
+                    <p>
+                        Sua contribuição ajuda a transformar vidas
+                        e fortalecer nossos projetos sociais.
+                    </p>
+
+      <button class="modal-close" onclick="this.closest('.modal').style.display = 'none';">
+    Fechar
+</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ONG Esperança</p>
+    </footer>
+
+    <script type="module" src="../js/script.js"></script>
+
+</body>
+
+</html>
